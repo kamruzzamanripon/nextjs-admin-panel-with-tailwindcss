@@ -1,8 +1,9 @@
 import { ArrowNarrowLeftIcon, ArrowNarrowRightIcon } from '@heroicons/react/solid';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 
-const Nav = () => {
+
+const Nav = ({sidebarOutsideClick}) => {
     const [sidebarStatus, setSidebarStatus] = useState(false);
 
     const sidebarClose = ()=>{
@@ -13,7 +14,12 @@ const Nav = () => {
         setSidebarStatus(true)
     }
 
-    //console.log("sidebar", sidebarStatus)
+    useEffect(()=>{
+     if(sidebarOutsideClick){
+      setSidebarStatus(false)
+     }
+    },[sidebarOutsideClick])
+    //console.log("sidebar Nav", sidebarOutsideClick)
     return (
         <>
         
