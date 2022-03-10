@@ -25,10 +25,10 @@ const Layout = ({children, title="Ecommerce"}) => {
           <div className="flex-grow text-gray-800">
             <Header />
               {children}
-            <Footer />
           </div>
           
        </div> 
+        <Footer />
         
 
     </Fragment>

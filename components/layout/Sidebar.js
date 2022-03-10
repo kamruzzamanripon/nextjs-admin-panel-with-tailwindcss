@@ -11,7 +11,7 @@ const Sidebar = () => {
     //console.log("sidebar Ref", sidebarRef)
     //console.log("sidebar Ref sidebarOutsideClick", sidebarOutsideClick)
     return (
-        <aside className="hidden sm:flex sm:flex-col" ref={sidebarRef}>
+        <aside className="hidden sm:flex sm:flex-col z-50" ref={sidebarRef}>
             <Logo />
             
             <div className="flex-grow flex flex-col justify-between text-gray-500 bg-gray-800">

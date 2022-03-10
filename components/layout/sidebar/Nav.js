@@ -2,7 +2,7 @@ import {
   ArrowNarrowLeftIcon,
   ArrowNarrowRightIcon,
   CollectionIcon,
-  CubeIcon
+  FilmIcon
 } from "@heroicons/react/solid";
 import React, { useEffect, useState } from "react";
 import NavItem from "./NavItem";
@@ -49,6 +49,7 @@ const Nav = ({ sidebarOutsideClick }) => {
         </div>
 
         <NavItem
+          hrefLink='/category'
           sidebarStatus={sidebarStatus}
           menuTitle="Category"
           subMenu={false}
@@ -56,14 +57,17 @@ const Nav = ({ sidebarOutsideClick }) => {
         >
           <CollectionIcon className="h-10" />
         </NavItem> 
+
         <NavItem
+          hrefLink='/'
           sidebarStatus={sidebarStatus}
-          menuTitle="Sub-Category"
+          menuTitle="Category"
           subMenu={true}
           subMenuArray={SubCategorySubMenuArray}
         >
-          <CubeIcon className="h-10" />
-        </NavItem>
+          <FilmIcon className="h-10" />
+        </NavItem> 
+       
       </nav>
     </>
   );
