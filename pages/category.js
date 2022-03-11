@@ -4,7 +4,7 @@ import Layout from '../components/layout/Layout';
 
 export default function categoryPage() {
   return (
-    <Layout title='Home Layout'>
+    <Layout title='Category'>
         <Category />
     </Layout>
   )

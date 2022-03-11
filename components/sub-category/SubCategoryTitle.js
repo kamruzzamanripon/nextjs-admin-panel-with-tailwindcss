@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "../common/Modal";
 
-const CategoryTitle = () => {
+const SubCategoryTitle = () => {
   const [modal, setModal] = useState(false);
   return (
     <>
@@ -37,4 +37,4 @@ const CategoryTitle = () => {
   );
 };
 
-export default CategoryTitle;
+export default SubCategoryTitle;
