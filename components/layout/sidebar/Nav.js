@@ -24,6 +24,22 @@ const Nav = ({ sidebarOutsideClick }) => {
 
   const SubCategorySubMenuArray = ["Sub-Category All", "Sub-Category Edit"];
 
+   //if menu has chile menu then  use seperate array
+   const childMenu = [
+    {
+      subMenuTitle: "child One",
+      linkHref: "/"
+    },
+    {
+      subMenuTitle: "child Two",
+      linkHref: "/"
+    },
+    {
+      subMenuTitle: "child Three",
+      linkHref: "/"
+    }
+  ];
+
   useEffect(() => {
     if (sidebarOutsideClick) {
       setSidebarStatus(false);
@@ -67,12 +83,13 @@ const Nav = ({ sidebarOutsideClick }) => {
           <DuplicateIcon className="h-10" />
         </NavItem> 
 
+        {/* this menu has child Menu     */}
         <NavItem
-          hrefLink='/'
+          hrefLink='#'
           sidebarStatus={sidebarStatus}
-          menuTitle="Other Menu"
+          menuTitle="Chiled Menu"
           subMenu={true}
-          subMenuArray={SubCategorySubMenuArray}
+          subMenuArray={childMenu}
         >
           <FilmIcon className="h-10" />
         </NavItem> 

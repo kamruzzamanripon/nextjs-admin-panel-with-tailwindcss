@@ -28,4 +28,8 @@
   .pure-modal .panel-heading {
     @apply bg-purple-600!important;
   }
+
+  p.product-title {
+    margin-top: 0px !important;
+  }
 }
