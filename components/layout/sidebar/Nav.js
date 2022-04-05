@@ -22,8 +22,6 @@ const Nav = ({ sidebarOutsideClick }) => {
     setSubMenuToggleStatus(!subMenuToggleStatus);
   };
 
-  const SubCategorySubMenuArray = ["Sub-Category All", "Sub-Category Edit"];
-
    //if menu has chile menu then  use seperate array
    const childMenu = [
     {

@@ -4,9 +4,9 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 
-const Layout = ({children, title="Ecommerce"}) => {
+const Layout = ({children, title="Sample Title"}) => {
      //console.log("layout", title)
-     const [sidebarOpen, setSidebarOpen] = useState(false);
+     const [mobileNavsidebar, setMobileNavsidebar] = useState(false);
      
 
 
@@ -19,16 +19,17 @@ const Layout = ({children, title="Ecommerce"}) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-       <div className="flex bg-gray-100 min-h-screen">
+       <div className="flex bg-gray-100 min-h-screen relative">
         
-          <Sidebar />
+          <Sidebar mobileNavsidebar={mobileNavsidebar} />
+          
           <div className="flex-grow text-gray-800">
-            <Header />
+          <Header mobileNavsidebar={mobileNavsidebar} setMobileNavsidebar={setMobileNavsidebar} />
               {children}
           </div>
-          
-       </div> 
+
         <Footer />
+      </div> 
         
 
     </Fragment>

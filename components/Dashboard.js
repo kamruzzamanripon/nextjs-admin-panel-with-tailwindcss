@@ -4,6 +4,7 @@ const Dashboard = () => {
     return (
         <>
         <main className="p-6 sm:p-10 space-y-6">
+        
         <div className="flex flex-col space-y-6 md:space-y-0 md:flex-row justify-between">
           <div className="mr-6">
             <h1 className="text-4xl font-semibold mb-2">Dashboard</h1>
