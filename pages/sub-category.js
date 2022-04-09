@@ -1,5 +1,5 @@
 import Layout from '../components/layout/Layout';
-import SubCategory from '../components/SubCategory';
+import SubCategory from '../components/sub-category/SubCategory';
 
 
 export default function subCategoryPage() {
