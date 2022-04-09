@@ -30,7 +30,7 @@ const NavItem = ({sidebarStatus, menuTitle, subMenu, subMenuArray, hrefLink, chi
             {subMenu && (
                 <ul className={`${subMenuToggleStatus ? '' : 'hidden'} text-white space-y-2 ml-7`}>
                     {subMenuArray.map((subMenu, index)=> (
-                        <Link href={subMenu.linkHref}>
+                        <Link href={subMenu.linkHref} key={index}>
                         <li className='cursor-pointer active:text-orange-400 hover:text-purple-500' key={index}>{subMenu.subMenuTitle}</li>
                         </Link>
                         ))
