@@ -38,13 +38,8 @@ const CategoryTable = () => {
       ];
       
       const data = [
-<<<<<<< HEAD
         { id:'001',name: 'Jack', subCount: 28, productCount: 'some where' },
         {  id:'002',name: 'Rose', subCount: 36, productCount: 'some where' },
-=======
-        { id:'01', name: 'Jack', subCount: 28, productCount: 'some where' },
-        { id:'02', name: 'Rose', subCount: 36, productCount: 'some where' },
->>>>>>> 8fcaaf5b264e59beeb88ae05e286ae8da7eb2142
       ];
 
       //Pagination
@@ -55,11 +50,7 @@ const CategoryTable = () => {
 
     return (
         <>
-<<<<<<< HEAD
         <Table columns={columns} data={data} rowKey={data => data.id}  className='bg-purple-700 p-4 w-full text-center rc-table-custom font-semibold '/>
-=======
-        <Table columns={columns} data={data} rowKey="id"  className='bg-purple-700 p-4 w-full text-center rc-table-custom font-semibold '/>
->>>>>>> 8fcaaf5b264e59beeb88ae05e286ae8da7eb2142
         <Pagination
           activePage={activePage}
           itemsCountPerPage={10}
