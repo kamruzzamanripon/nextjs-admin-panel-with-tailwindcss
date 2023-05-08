@@ -37,8 +37,8 @@ const SubCategoryTable = () => {
       ];
       
       const data = [
-        { name: 'Jack', subCount: 'avc', productCount: 'some where' },
-        { name: 'Rose', subCount: 'avc', productCount: 'some where' },
+        { id:'001',name: 'Jack', subCount: 28, productCount: 'some where' },
+        {  id:'002',name: 'Rose', subCount: 36, productCount: 'some where' },
       ];
 
       //Pagination
@@ -49,7 +49,7 @@ const SubCategoryTable = () => {
 
     return (
         <>
-        <Table columns={columns} data={data}  className='bg-purple-700 p-4 w-full text-center rc-table-custom font-semibold '/>
+        <Table columns={columns} data={data} rowKey={data => data.id}  className='bg-purple-700 p-4 w-full text-center rc-table-custom font-semibold '/>
         <Pagination
           activePage={activePage}
           itemsCountPerPage={10}

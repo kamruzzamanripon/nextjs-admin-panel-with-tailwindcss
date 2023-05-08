@@ -9,19 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@heroicons/react": "^1.0.6",
-    "next": "12.1.0",
-    "rc-table": "^7.23.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-js-pagination": "^3.0.3",
-    "react-pure-modal": "^2.1.0",
-    "react-transition-group": "^4.4.2"
+    "@heroicons/react": "^2.0.17",
+    "next": "^13.4.1",
+    "rc-table": "^7.32.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-js-pagination": "^3.0.2",
+    "react-pure-modal": "^2.2.0",
+    "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0",
+    "eslint-config-next": "^13.4.1",
     "postcss": "^8.4.8",
     "tailwindcss": "^3.0.23"
   }

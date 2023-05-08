@@ -1,8 +1,6 @@
 import {
-  ArrowNarrowLeftIcon,
-  ArrowNarrowRightIcon,
-  CollectionIcon, DuplicateIcon, FilmIcon
-} from "@heroicons/react/solid";
+  CloudIcon, DocumentIcon, FolderIcon
+} from "@heroicons/react/24/solid";
 import React, { useEffect, useState } from "react";
 import NavItem from "./NavItem";
 
@@ -47,19 +45,7 @@ const Nav = ({ sidebarOutsideClick }) => {
   return (
     <>
       <nav className="flex flex-col mx-4 my-6 space-y-4">
-        <div className="inline-flex items-center justify-center ">
-          {sidebarStatus ? (
-            <ArrowNarrowLeftIcon
-              className="inline-block h-12 cursor-pointer"
-              onClick={sidebarClose}
-            />
-          ) : (
-            <ArrowNarrowRightIcon
-              className="inline-block h-12 cursor-pointer"
-              onClick={sidebarOpen}
-            />
-          )}
-        </div>
+       
 
         <NavItem
           hrefLink='/category'
@@ -68,7 +54,7 @@ const Nav = ({ sidebarOutsideClick }) => {
           subMenu={false}
           subMenuArray={null}
         >
-          <CollectionIcon className="h-10" />
+          <CloudIcon className="h-10" />
         </NavItem> 
 
         <NavItem
@@ -78,7 +64,7 @@ const Nav = ({ sidebarOutsideClick }) => {
           subMenu={false}
           subMenuArray={null}
         >
-          <DuplicateIcon className="h-10" />
+          <DocumentIcon className="h-10" />
         </NavItem> 
 
         {/* this menu has child Menu     */}
@@ -89,7 +75,7 @@ const Nav = ({ sidebarOutsideClick }) => {
           subMenu={true}
           subMenuArray={childMenu}
         >
-          <FilmIcon className="h-10" />
+          <FolderIcon className="h-10" />
         </NavItem> 
        
       </nav>
