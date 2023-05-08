@@ -1,5 +1,9 @@
 import React, { useRef } from 'react';
 import OutsideClick from '../../utils/outsideClick';
+<<<<<<< HEAD
+=======
+import Logo from './sidebar/Logo';
+>>>>>>> 8fcaaf5b264e59beeb88ae05e286ae8da7eb2142
 import Nav from './sidebar/Nav';
 import SettingButton from './sidebar/SettingButton';
 import Logo from './sidebar/logo';
@@ -10,6 +14,7 @@ const Sidebar = ({mobileNavsidebar}) => {
 
     //console.log("sidebar Ref", sidebarRef)
     //console.log("sidebar Ref sidebarOutsideClick", sidebarOutsideClick)
+    //fix component
     return (
         <aside className={`${mobileNavsidebar ? 'block' : 'hidden'} sm:flex sm:flex-col z-50`} ref={sidebarRef}>
             <Logo />

@@ -62,7 +62,7 @@ const Modal = ({modal, setModal}) => {
                     type="file" 
                     accept="image/*"
                     name="user[image]" 
-                    multiple="true"
+                    multiple={true}
                     onChange={imageChange}
                 />
                <div className="flex overflow-auto my-2 p-2">
