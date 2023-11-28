@@ -31,7 +31,7 @@ const SubCategoryTitle = () => {
           </svg>
           Create new Category
         </button>
-        <Modal modal={modal} setModal={setModal} />
+        <Modal modal={modal} setModal={setModal} headerTitle="Category" />
       </div>
     </>
   );

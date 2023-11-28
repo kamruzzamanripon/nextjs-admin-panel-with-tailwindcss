@@ -32,7 +32,7 @@ const PageComponentTitle = ({title, titleDescription, buttonTitle}) => {
             </svg>
             {buttonTitle}
           </button>
-          <Modal modal={modal} setModal={setModal} />
+          <Modal modal={modal} setModal={setModal} headerTitle={title}/>
         </div>
       </>
     );
